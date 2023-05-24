@@ -1,0 +1,114 @@
+/*=============== 
+ Global Settings 
+===============*/
+
+html {
+  box-sizing: border-box;
+  background-color: #171717;
+  color: darkgrey;
+  font-family: "Century Gothic", "Courier New", Courier, monospace;
+}
+
+* {
+  box-sizing: inherit;
+  font-size: 20px;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin-top: 0;
+  margin-left: 0;
+}
+
+header {
+  color: snow;
+}
+
+a {
+  color: deepskyblue;
+  text-decoration: none;
+}
+
+#navbar {
+  max-width: 360px;
+  border: 2px solid snow;
+  border-top: 0;
+  border-bottom: 0;
+  border-left: 0;
+  position: fixed;
+}
+
+#navbar > header {
+  border-bottom: 2px solid snow;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+  padding: .5em 0;
+  position: relative;
+}
+
+#navbar > ul {
+  list-style: none;
+  top: .5em;
+  left: 0;
+  margin: 0;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
+  padding: .45em 0;
+}
+
+#main-doc {
+  max-width: 950px;
+  position: relative;
+  top: 2em;
+  left: 22em;
+  right: 0;
+}
+
+#main-doc > section > header {
+  font-size: 1.35em;
+  font-weight: bold;
+}
+
+code {
+  background-color: rgb(7, 40, 86);
+  color: snow;
+  padding: .2em;
+}
+
+#global_variables {
+  margin-top: 1em;
+}
+
+#data_types {
+  padding-top: 1em;
+}
+
+strong {
+  color: snow;
+}
+
+#while_statement {
+  margin-top: 1em;
+}
+
+
+/*================
+ Mobile Settings 
+================*/
+
+@media (max-width: 810px) {
+  #navbar {
+    position: absolute;
+    left: -400px;
+    top: -400px;
+  }
+
+  #main-doc {
+    left: 0;
+    padding: 0 .8em;
+  }
+}
